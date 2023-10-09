@@ -6,40 +6,22 @@
     <title>ToDo list</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-
     <div class="todo">
-
         <div class="todo__content">
             <h1 class="todo__title">Все задачи</h1>
             <div class="todo__new">
-                <input type="text" placeholder="Новая задача">
-                <div class="todo__add">+</div>
+                <input id="new" type="text" placeholder="Новая задача">
+                <div id="add" class="todo__add">+</div>
             </div>
-            <div class="todo__list">
-                <div class="todo_task">
-                    <label class="todo__checkbox">
-                        <input type="checkbox">
-                        <div></div>
-                    </label>
-                    <div class="todo__task-text">Lorem ipsum dolor, 
-                    sit amet consectetur adipisicing.</div>
-                    <div class="todo__tasl-del">-</div>
-                </div>
-                <div class="todo_task">
-                    <label class="todo__checkbox">
-                        <input type="checkbox">
-                        <div></div>
-                    </label>
-                    <div class="todo__task-text">Lorem ipsum dolor, 
-                    sit amet consectetur adipisicing.</div>
-                    <div class="todo__tasl-del">-</div>
-                </div>
+            <div class="todo__tasks-count">
+                <span>Всего задач:</span>
+                <strong id="count">0</strong>
             </div>
+            <div id="tasks" class="todo__list"></div>
         </div>
-
     </div>
-
     <script src="js/script.js"></script>
 </body>
 </html>

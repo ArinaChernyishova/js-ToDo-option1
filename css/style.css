@@ -35,7 +35,7 @@ body {
 .todo__new {
     --size: 50px;
     display: flex;
-    margin: 16px 0 32px;
+    margin: 16px 0 16px;
 }
 
 .todo__new input {
@@ -64,6 +64,9 @@ body {
 
 }
 
+.todo__list {
+    margin-top: 16px;
+}
 
 .todo__list > *:not(:last-child) {
     margin-bottom: 8px;
@@ -77,6 +80,11 @@ body {
 }
 .todo_task:hover .todo__tasl-del {
     display: block;
+}
+
+.todo_task-complate .todo__task-text{
+    text-decoration: line-through;
+    color: var(--default);
 }
 
 .todo__checkbox {
